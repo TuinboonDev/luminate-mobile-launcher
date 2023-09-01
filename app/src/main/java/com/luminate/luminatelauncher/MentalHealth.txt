@@ -1,0 +1,20 @@
+donc, enregister un string qui contizent une liste des apps, un truc du genre:
+applist : String = ""
+for (app in applist) {
+    applist = applist + app + ";"
+}
+
+app est le nom de packet, com.snapchat.android eg.
+
+donc ça fait un truc du genre :
+
+ "com.luminateos.clock;com.luminateos.camera;com.luminateos.settings;com.luminateos.notes;com.luminateos.photos;com.luminateos.store;com.luminateos.wave;com.luminateos.files;com.luminateos.lumipay;com.luminateos.connect;com.luminateos.playground;com.luminateos.mail"
+
+ et pour les shared pref, retourner par default le string montrer en haut la
+
+Donc en gros, tu fais une list d'emplacement, et une fonction où tu donnes le packet et cette liste,
+puis, tu verifie avec une autre fncion si l'emplacement de l'app actuelle est dans la lste ou pas,
+si non, tu retourne l'emplavement de base, par contre, si oui,
+lancer la fonction getNextPos, et donner la liste;
+retourner ce que retourne getnextpos
+
